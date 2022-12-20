@@ -27,8 +27,11 @@ map:
 options:
   system_packages: []
   init_commands: []
+  run_opts: ""
 schema:
   system_packages:
     - str
   init_commands:
+    - str
+  run_opts:
     - str

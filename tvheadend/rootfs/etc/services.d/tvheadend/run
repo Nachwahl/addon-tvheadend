@@ -6,4 +6,6 @@
 
 bashio::log.info "Starting TVHeadend..."
 
-exec /usr/bin/tvheadend -u root -g root -c /config/tvheadend
+RUN_OPTS=$(bashio::config 'run_opts')
+
+exec /usr/bin/tvheadend -u root -g root -c /config/tvheadend ${RUN_OPTS}
